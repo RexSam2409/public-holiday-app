@@ -16,6 +16,7 @@ export const getCountries = async () => {
 };
 
 export const getHoliday = async (selectedCountry) => {
+  if (!selectedCountry) return;
   try {
     const res = await fetch(
       `https://openholidaysapi.org/PublicHolidays?countryIsoCode=${selectedCountry}&validFrom=2023-01-01&validTo=2023-12-31&languageIsoCode=${selectedCountry}&subdivisionCode=`,

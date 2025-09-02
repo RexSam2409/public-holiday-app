@@ -1,4 +1,4 @@
-import { CircularProgress, Grid, Paper } from '@mui/material';
+import { Grid, Paper } from '@mui/material';
 import { useState } from 'react';
 import '../styles/holiday.page.css';
 import { CountryDropdown, HolidayList } from '../components';
