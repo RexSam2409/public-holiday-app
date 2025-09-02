@@ -15,7 +15,7 @@ export const getCountries = async () => {
   }
 };
 
-export const getHoliday = async (selectedCountry) => {
+export const getHoliday = async (selectedCountry: string | undefined) => {
   if (!selectedCountry) return;
   try {
     const res = await fetch(
